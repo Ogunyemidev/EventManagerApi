@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QB1aqNHOg4c=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.API\\MyApi.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\somac\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.13\\microsoft.aspnetcore.openapi.9.0.13.nupkg.sha512",
+    "C:\\Users\\somac\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+  ],
+  "logs": []
+}
