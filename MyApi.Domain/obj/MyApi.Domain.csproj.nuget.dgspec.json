@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\MyApi.Domain.csproj": {}
   },
   "projects": {
@@ -12,6 +13,19 @@
         "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\MyApi.Domain.csproj",
         "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\obj\\",
+=======
+    "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Domain\\MyApi.Domain.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Domain\\MyApi.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Domain\\MyApi.Domain.csproj",
+        "projectName": "MyApi.Domain",
+        "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Domain\\MyApi.Domain.csproj",
+        "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Domain\\obj\\",
+>>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",

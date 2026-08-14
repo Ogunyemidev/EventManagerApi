@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.API\\MyApi.API.csproj": {}
   },
   "projects": {
@@ -188,6 +189,19 @@
         "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\MyApi.Domain.csproj",
         "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\obj\\",
+=======
+    "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.API\\MyApi.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.API\\MyApi.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.API\\MyApi.API.csproj",
+        "projectName": "MyApi.API",
+        "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.API\\MyApi.API.csproj",
+        "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.API\\obj\\",
+>>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
@@ -231,6 +245,7 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+<<<<<<< HEAD
           "imports": [
             "net461",
             "net462",
@@ -317,6 +332,12 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[9.0.4, )"
+=======
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+>>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
             }
           },
           "imports": [
@@ -331,6 +352,12 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+<<<<<<< HEAD
+=======
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+>>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
