@@ -1,7 +1,6 @@
 {
   "version": 3,
   "targets": {
-<<<<<<< HEAD
     "net9.0": {
       "FluentValidation/12.1.1": {
         "type": "package",
@@ -782,13 +781,6 @@
       "MyApi.Domain >= 1.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4"
     ]
-=======
-    "net9.0": {}
-  },
-  "libraries": {},
-  "projectFileDependencyGroups": {
-    "net9.0": []
->>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
   },
   "packageFolders": {
     "C:\\Users\\somac\\.nuget\\packages\\": {},
@@ -799,19 +791,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
       "projectName": "MyApi.Infrastructure",
       "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Infrastructure\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
-      "projectName": "MyApi.Infrastructure",
-      "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\obj\\",
->>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
@@ -837,7 +821,6 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
-<<<<<<< HEAD
           "projectReferences": {
             "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Application\\MyApi.Application.csproj": {
               "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Application\\MyApi.Application.csproj"
@@ -846,9 +829,6 @@
               "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\MyApi.Domain.csproj"
             }
           }
-=======
-          "projectReferences": {}
->>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
         }
       },
       "warningProperties": {
@@ -866,7 +846,6 @@
     "frameworks": {
       "net9.0": {
         "targetAlias": "net9.0",
-<<<<<<< HEAD
         "dependencies": {
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
@@ -877,8 +856,6 @@
             "version": "[9.0.4, )"
           }
         },
-=======
->>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
         "imports": [
           "net461",
           "net462",

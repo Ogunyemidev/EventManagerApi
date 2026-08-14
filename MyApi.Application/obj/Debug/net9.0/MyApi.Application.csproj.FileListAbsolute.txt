@@ -1,0 +1,16 @@
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\bin\Debug\net9.0\MyApi.Application.deps.json
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\bin\Debug\net9.0\MyApi.Application.dll
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\bin\Debug\net9.0\MyApi.Application.pdb
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\bin\Debug\net9.0\MyApi.Domain.dll
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\bin\Debug\net9.0\MyApi.Domain.pdb
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.csproj.AssemblyReference.cache
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.AssemblyInfoInputs.cache
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.AssemblyInfo.cs
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.sourcelink.json
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Ap.B5EC29D1.Up2Date
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.dll
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\refint\MyApi.Application.dll
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.pdb
+C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\ref\MyApi.Application.dll

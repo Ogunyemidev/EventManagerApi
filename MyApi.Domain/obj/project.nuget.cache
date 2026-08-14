@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "zeA3KtRZUnw=",
   "success": true,
   "projectFilePath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\MyApi.Domain.csproj",
-=======
-  "dgSpecHash": "oDHu+DZ0IkM=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Domain\\MyApi.Domain.csproj",
->>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
   "expectedPackageFiles": [],
   "logs": []
 }
