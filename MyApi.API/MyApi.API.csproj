@@ -8,12 +8,15 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.13" />
+<<<<<<< HEAD
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.2.3" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyApi.Application\MyApi.Application.csproj" />
     <ProjectReference Include="..\MyApi.Infrastructure\MyApi.Infrastructure.csproj" />
+=======
+>>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
   </ItemGroup>
 
 </Project>

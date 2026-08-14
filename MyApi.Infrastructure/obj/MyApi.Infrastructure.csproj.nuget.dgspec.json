@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj": {}
   },
   "projects": {
@@ -97,6 +98,19 @@
         "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\MyApi.Domain.csproj",
         "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Domain\\obj\\",
+=======
+    "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
+        "projectName": "MyApi.Infrastructure",
+        "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\obj\\",
+>>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
@@ -159,6 +173,7 @@
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
+<<<<<<< HEAD
     },
     "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj": {
       "version": "1.0.0",
@@ -247,6 +262,8 @@
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
+=======
+>>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
     }
   }
 }

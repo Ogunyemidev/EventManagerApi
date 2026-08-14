@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "YSdmnqF+GU0=",
   "success": true,
   "projectFilePath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
@@ -22,5 +23,11 @@
     "C:\\Users\\somac\\.nuget\\packages\\npgsql\\9.0.3\\npgsql.9.0.3.nupkg.sha512",
     "C:\\Users\\somac\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\9.0.4\\npgsql.entityframeworkcore.postgresql.9.0.4.nupkg.sha512"
   ],
+=======
+  "dgSpecHash": "WKj98Ty2Yns=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
+  "expectedPackageFiles": [],
+>>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
   "logs": []
 }
