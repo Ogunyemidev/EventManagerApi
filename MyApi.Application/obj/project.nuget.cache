@@ -1,6 +1,5 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "IVSr/rwl0fE=",
   "success": true,
   "projectFilePath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingManager\\MyApi.Application\\MyApi.Application.csproj",
@@ -9,11 +8,5 @@
     "C:\\Users\\somac\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.1.1\\fluentvalidation.dependencyinjectionextensions.12.1.1.nupkg.sha512",
     "C:\\Users\\somac\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512"
   ],
-=======
-  "dgSpecHash": "ArBlLD0pXuw=",
-  "success": true,
-  "projectFilePath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventTicketingAPI\\MyApi.Application\\MyApi.Application.csproj",
-  "expectedPackageFiles": [],
->>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
   "logs": []
 }

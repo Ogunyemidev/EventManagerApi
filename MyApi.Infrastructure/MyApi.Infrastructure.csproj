@@ -1,6 +1,5 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-<<<<<<< HEAD
   <ItemGroup>
     <ProjectReference Include="..\MyApi.Application\MyApi.Application.csproj" />
     <ProjectReference Include="..\MyApi.Domain\MyApi.Domain.csproj" />
@@ -11,8 +10,6 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
   </ItemGroup>
 
-=======
->>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>

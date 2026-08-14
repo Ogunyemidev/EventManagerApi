@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 @MyApi.API_HostAddress = http://localhost:5067
-=======
-@MyApi.API_HostAddress = http://localhost:5112
->>>>>>> 691d3f9d576218e79e51e2584a043becea1c9310
 
 GET {{MyApi.API_HostAddress}}/weatherforecast/
 Accept: application/json
