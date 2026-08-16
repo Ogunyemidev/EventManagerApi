@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using EventTicketingManager.Infrastructure.Persistence;
+
 using Microsoft.EntityFrameworkCore;
+using MyApi.Infrastructure.Persistence;
 
 namespace MyApi.Infrastructure
 {
