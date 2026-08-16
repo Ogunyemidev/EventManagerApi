@@ -1,9 +1,10 @@
 
-using EventTicketingManager.Infrastructure.Persistence;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MyApi.Domain;
+using MyApi.Infrastructure.Persistence;
 
 namespace MyApi.Infrastructure
 {

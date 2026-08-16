@@ -14,3 +14,19 @@ C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debu
 C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\refint\MyApi.Application.dll
 C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\MyApi.Application.pdb
 C:\Users\somac\OneDrive\Desktop\EventTicketingManager\MyApi.Application\obj\Debug\net9.0\ref\MyApi.Application.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\bin\Debug\net9.0\MyApi.Application.deps.json
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\bin\Debug\net9.0\MyApi.Application.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\bin\Debug\net9.0\MyApi.Application.pdb
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\bin\Debug\net9.0\MyApi.Domain.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\bin\Debug\net9.0\MyApi.Domain.pdb
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Application.csproj.AssemblyReference.cache
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Application.AssemblyInfoInputs.cache
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Application.AssemblyInfo.cs
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Application.csproj.CoreCompileInputs.cache
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Application.sourcelink.json
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Ap.B5EC29D1.Up2Date
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Application.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\refint\MyApi.Application.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\MyApi.Application.pdb
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.Application\obj\Debug\net9.0\ref\MyApi.Application.dll
