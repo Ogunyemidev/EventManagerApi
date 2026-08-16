@@ -4,7 +4,7 @@ using MyApi.Domain.Entities;
 
 namespace MyApi.Infrastructure.Persistence.EntityTypeConfigurations
 {
-    public class BookingEntityTypeConfiguration 
+    public class BookingEntityTypeConfiguration
         : IEntityTypeConfiguration<Booking>
     {
         public void Configure(EntityTypeBuilder<Booking> builder)
@@ -32,12 +32,16 @@ namespace MyApi.Infrastructure.Persistence.EntityTypeConfigurations
             builder.Property(b => b.ReservedAt)
                    .IsRequired();
 
-       
             // TotalAmount
             builder.Property(b => b.TotalAmount)
                    .IsRequired()
                    .HasPrecision(10, 2);
 
+            // Customer/User relationship
+            builder.HasOne(b => b.User)
+                   .WithMany()
+                   .HasForeignKey(b => b.CustomerId)
+                   .OnDelete(DeleteBehavior.Restrict);
 
             // Event relationship
             builder.HasOne(b => b.Event)
