@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -6,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MyApi.Domain.Entities;
+
 
 namespace MyApi.Application.Services.Interfaces
 {
@@ -19,5 +19,6 @@ namespace MyApi.Application.Services.Interfaces
         Task<bool> DeleteUserAsync(Guid id);
         Task<bool> UpdateWalletBalanceAsync(Guid id, decimal amount);
         Task<bool> EmailExistsAsync(string email);
+        Task<bool> SearchUserRequest();
     }
 }
