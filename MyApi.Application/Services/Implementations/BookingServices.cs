@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
+using MyApi.Application.IRepositories;
+using MyApi.Application.Services.Interfaces;
+using MyApi.Domain.Entities;
 
 namespace MyApi.Application.Services.Implementations
 {
-    public class BookingServices : IBookingServices
+    public class BookingServices : IBookingService
     {
         private readonly IBookingRepository _bookingRepository;
 
@@ -41,25 +43,28 @@ namespace MyApi.Application.Services.Implementations
 
         public async Task<bool> CreateBookingAsync(Booking booking)
         {
-            await _bookingRepository.AddAsync(booking);
-            return await _bookingRepository.SavedChangesAsync(booking);
+            return await _bookingRepository.CreateBooking(booking);
         }
 
         public async Task<bool> UpdateBookingAsync(Booking booking)
         {
-            _bookingRepository.UpdateBookingAsync(booking);
-            return await _bookingRepository.SavedChangesAsync(booking);
+            return await _bookingRepository.UpdateBookingAsync(booking);
         }
 
         public async Task<bool> DeleteBookingAsync(Guid bookingId)
         {
             var booking = await _bookingRepository.GetByIdAsync(bookingId);
             if (booking == null)
+            {
                 return false;
+            }
 
-            _bookingRepository.DeleteBooking(booking);
-            return await _bookingRepository.SavedChangesAsync(booking);
+            return await _bookingRepository.DeleteBooking(bookingId);
         }
-        
+
+        public async Task<bool> BookingExistsAsync(Guid bookingId)
+        {
+            return await _bookingRepository.ExistsAsync(bookingId);
+        }
     }
 }

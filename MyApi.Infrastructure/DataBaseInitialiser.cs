@@ -1,10 +1,9 @@
-
-
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using MyApi.Domain;
 using MyApi.Infrastructure.Persistence;
+using MyApi.Domain.Entities;
 
 namespace MyApi.Infrastructure
 {

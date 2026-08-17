@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
 using MyApi.Infrastructure.Persistence;
+using MyApi.Infrastructure.Persistence.Repositories;
+using MyApi.Application.Services.Interfaces;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MyApi.Domain.BaseEntities;
+using MyApi.Domain.Entities;
 using MyApi.Domain.Enums;
 
 namespace MyApi.Domain.Entities
