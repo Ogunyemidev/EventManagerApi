@@ -398,3 +398,21 @@ C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\refi
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.pdb
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.genruntimeconfig.cache
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\ref\MyApi.API.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\AWSSDK.Core.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\AWSSDK.S3.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Core.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Storage.Blobs.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Storage.Common.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.ClientModel.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.IO.Hashing.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.Memory.Data.dll

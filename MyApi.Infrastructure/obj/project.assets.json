@@ -1536,15 +1536,15 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Security.Cryptography.Pkcs/9.0.8": {
+      "System.Security.Cryptography.Pkcs/10.0.10": {
         "type": "package",
         "compile": {
-          "lib/net9.0/System.Security.Cryptography.Pkcs.dll": {
+          "lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/System.Security.Cryptography.Pkcs.dll": {
+          "lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
             "related": ".xml"
           }
         },
@@ -1552,7 +1552,7 @@
           "buildTransitive/net8.0/_._": {}
         },
         "runtimeTargets": {
-          "runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.dll": {
+          "runtimes/win/lib/net10.0/System.Security.Cryptography.Pkcs.dll": {
             "assetType": "runtime",
             "rid": "win"
           }
@@ -1574,18 +1574,18 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Security.Cryptography.Xml/9.0.8": {
+      "System.Security.Cryptography.Xml/10.0.10": {
         "type": "package",
         "dependencies": {
-          "System.Security.Cryptography.Pkcs": "9.0.8"
+          "System.Security.Cryptography.Pkcs": "10.0.10"
         },
         "compile": {
-          "lib/net9.0/System.Security.Cryptography.Xml.dll": {
+          "lib/net10.0/System.Security.Cryptography.Xml.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net9.0/System.Security.Cryptography.Xml.dll": {
+          "lib/net10.0/System.Security.Cryptography.Xml.dll": {
             "related": ".xml"
           }
         },
@@ -4104,20 +4104,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Cryptography.Pkcs/9.0.8": {
-      "sha512": "+mtc8dZnrP9N1HZICncBzLUrX4YBP+WvAWb817auAA5mKOJzHZShuGpCtQiekgV/7N0uS/x0LkdBAezBcSBwVA==",
+    "System.Security.Cryptography.Pkcs/10.0.10": {
+      "sha512": "KG8t5RHczdgB3IWvRndpI0nE1DSo7ikDYSDbITxfgRFyIvnYiKzuPjaZOsPnwFQ1aOGUl9sEulJul9wlHLEUoA==",
       "type": "package",
-      "path": "system.security.cryptography.pkcs/9.0.8",
+      "path": "system.security.cryptography.pkcs/10.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Security.Cryptography.Pkcs.targets",
         "buildTransitive/net462/_._",
         "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Pkcs.targets",
+        "lib/net10.0/System.Security.Cryptography.Pkcs.dll",
+        "lib/net10.0/System.Security.Cryptography.Pkcs.xml",
         "lib/net462/System.Security.Cryptography.Pkcs.dll",
         "lib/net462/System.Security.Cryptography.Pkcs.xml",
         "lib/net8.0/System.Security.Cryptography.Pkcs.dll",
@@ -4128,11 +4129,13 @@
         "lib/netstandard2.0/System.Security.Cryptography.Pkcs.xml",
         "lib/netstandard2.1/System.Security.Cryptography.Pkcs.dll",
         "lib/netstandard2.1/System.Security.Cryptography.Pkcs.xml",
+        "runtimes/win/lib/net10.0/System.Security.Cryptography.Pkcs.dll",
+        "runtimes/win/lib/net10.0/System.Security.Cryptography.Pkcs.xml",
         "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.dll",
         "runtimes/win/lib/net8.0/System.Security.Cryptography.Pkcs.xml",
         "runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.dll",
         "runtimes/win/lib/net9.0/System.Security.Cryptography.Pkcs.xml",
-        "system.security.cryptography.pkcs.9.0.8.nupkg.sha512",
+        "system.security.cryptography.pkcs.10.0.10.nupkg.sha512",
         "system.security.cryptography.pkcs.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4171,20 +4174,21 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Security.Cryptography.Xml/9.0.8": {
-      "sha512": "D3BLF3c0tRkAZ0w7/Si1noxrvfWVzNUpnaxxHPLc7DzNDs+xkWQBgpcDKQ0ZH2r6gyMujcn50uRXkuTVYElxsg==",
+    "System.Security.Cryptography.Xml/10.0.10": {
+      "sha512": "Mz6Y+s+uMQKj1H2BUF0OhlmaOQkLgSG34/IrUaBDirYBQ6bgwcFvO/XtXWcoDlBLFoFB0uKqDNhybHOd+fQK1A==",
       "type": "package",
-      "path": "system.security.cryptography.xml/9.0.8",
+      "path": "system.security.cryptography.xml/10.0.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "buildTransitive/net461/System.Security.Cryptography.Xml.targets",
         "buildTransitive/net462/_._",
         "buildTransitive/net8.0/_._",
         "buildTransitive/netcoreapp2.0/System.Security.Cryptography.Xml.targets",
+        "lib/net10.0/System.Security.Cryptography.Xml.dll",
+        "lib/net10.0/System.Security.Cryptography.Xml.xml",
         "lib/net462/System.Security.Cryptography.Xml.dll",
         "lib/net462/System.Security.Cryptography.Xml.xml",
         "lib/net8.0/System.Security.Cryptography.Xml.dll",
@@ -4193,7 +4197,7 @@
         "lib/net9.0/System.Security.Cryptography.Xml.xml",
         "lib/netstandard2.0/System.Security.Cryptography.Xml.dll",
         "lib/netstandard2.0/System.Security.Cryptography.Xml.xml",
-        "system.security.cryptography.xml.9.0.8.nupkg.sha512",
+        "system.security.cryptography.xml.10.0.10.nupkg.sha512",
         "system.security.cryptography.xml.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -4269,43 +4273,28 @@
       "MyApi.Application >= 1.0.0",
       "MyApi.Domain >= 1.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 10.0.0",
-      "System.Security.Cryptography.Xml >= 9.0.8"
+      "System.Security.Cryptography.Xml >= 10.0.10"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\somac\\.nuget\\packages\\": {},
-    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages": {}
+    "C:\\Users\\SURFACE PRO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
       "projectName": "MyApi.Infrastructure",
-      "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Infrastructure\\MyApi.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\SURFACE PRO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\somac\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
+        "C:\\Users\\SURFACE PRO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4313,11 +4302,11 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Application\\MyApi.Application.csproj": {
-              "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Application\\MyApi.Application.csproj"
+            "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Application\\MyApi.Application.csproj": {
+              "projectPath": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Application\\MyApi.Application.csproj"
             },
-            "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Domain\\MyApi.Domain.csproj": {
-              "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Domain\\MyApi.Domain.csproj"
+            "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Domain\\MyApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Domain\\MyApi.Domain.csproj"
             }
           }
         }
@@ -4332,7 +4321,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.400"
+      "SdkAnalysisLevel": "10.0.300"
     },
     "frameworks": {
       "net10.0": {
@@ -4363,7 +4352,7 @@
           },
           "System.Security.Cryptography.Xml": {
             "target": "Package",
-            "version": "[9.0.8, )"
+            "version": "[10.0.10, )"
           }
         },
         "imports": [
@@ -4382,7 +4371,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.303/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",
@@ -4659,87 +4648,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.8 has a known high severity vulnerability, https://github.com/advisories/GHSA-23rf-6693-g89p",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.8 has a known high severity vulnerability, https://github.com/advisories/GHSA-37gx-xxp4-5rgx",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.8 has a known high severity vulnerability, https://github.com/advisories/GHSA-6588-8gv4-xfgh",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.8 has a known high severity vulnerability, https://github.com/advisories/GHSA-8q5v-6pqq-x66h",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.8 has a known high severity vulnerability, https://github.com/advisories/GHSA-cvvh-rhrc-wg4q",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.8 has a known high severity vulnerability, https://github.com/advisories/GHSA-g8r8-53c2-pm3f",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.8 has a known high severity vulnerability, https://github.com/advisories/GHSA-mmjf-rqrv-855v",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Security.Cryptography.Xml' 9.0.8 has a known high severity vulnerability, https://github.com/advisories/GHSA-w3x6-4m5h-cxqf",
-      "libraryId": "System.Security.Cryptography.Xml",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  }
 }
