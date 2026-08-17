@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using MyApi.Domain;
+using MyApi.Domain.Entities;
 
 namespace MyApi.Infrastructure.Persistence.EntityTypeConfigurations
 {
@@ -45,11 +45,11 @@ namespace MyApi.Infrastructure.Persistence.EntityTypeConfigurations
                 .IsRequired();
 
                 
-            builder.Property(u => u.Role)
-                .HasColumnName("role")
-                .HasColumnType("varchar(50)")
-                .HasConversion<EnumToStringConverter<Role>>()
-                .IsRequired();
+            // builder.Property(u => u.Role)
+            //     .HasColumnName("role")
+            //     .HasColumnType("varchar(50)")
+            //     .HasConversion<EnumToStringConverter<Role>>()
+            //     .IsRequired();
 
                
 

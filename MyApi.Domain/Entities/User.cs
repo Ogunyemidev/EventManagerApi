@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using MyApi.Domain.BaseEntities;
+using MyApi.Domain.Enums;
 
-namespace MyApi.Domain
+namespace MyApi.Domain.Entities
 {
     public class User : BaseEntity
     {

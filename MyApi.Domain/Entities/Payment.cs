@@ -1,5 +1,5 @@
 
-using MyApi.Domain.BaseEntities;
+using MyApi.Domain.Entities;
 using MyApi.Domain.Enums;
 
 

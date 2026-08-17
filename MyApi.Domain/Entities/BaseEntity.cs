@@ -1,11 +1,10 @@
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MyApi.Domain.BaseEntities
-
-
+namespace MyApi.Domain.Entities
 {
     public abstract class BaseEntity
     {

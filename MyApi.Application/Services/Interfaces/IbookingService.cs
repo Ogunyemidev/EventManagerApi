@@ -2,10 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using MyApi.Domain.Entities;
 
 namespace MyApi.Application.Services.Interfaces
 {
-    public interface IbookingService
+    public interface IBookingService
     {
         Task<Booking?> GetBookingByIdAsync(Guid bookingId);
         Task<IEnumerable<Booking>> GetAllBookingsAsync();   

@@ -1,0 +1,13 @@
+using System;
+
+namespace MyApi.Application.Dtos.ResponseDtos
+{
+    public class LoginResponse
+    {
+        public string Token { get; set; } = default!;
+        public Guid Id { get; set; } = default!;
+        public string Email { get; set; } = default!;
+        public string Role { get; set; } = default!;
+        public string FullName { get; set; } = default!;
+    }
+}
