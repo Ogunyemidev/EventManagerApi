@@ -345,24 +345,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SURFACE PRO\\.nuget\\packages\\": {}
+    "C:\\Users\\somac\\.nuget\\packages\\": {},
+    "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Application\\MyApi.Application.csproj",
+      "projectUniqueName": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Application\\MyApi.Application.csproj",
       "projectName": "MyApi.Application",
-      "projectPath": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Application\\MyApi.Application.csproj",
-      "packagesPath": "C:\\Users\\SURFACE PRO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Application\\obj\\",
+      "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Application\\MyApi.Application.csproj",
+      "packagesPath": "C:\\Users\\somac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\DevExpress 22.2\\Components\\Offline Packages",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\SURFACE PRO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\somac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 22.2.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\DevExpress 22.2\\Components\\System\\Components\\Packages": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -370,8 +385,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Domain\\MyApi.Domain.csproj": {
-              "projectPath": "C:\\Users\\SURFACE PRO\\Desktop\\EventManagement\\EventManagerApi\\MyApi.Domain\\MyApi.Domain.csproj"
+            "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Domain\\MyApi.Domain.csproj": {
+              "projectPath": "C:\\Users\\somac\\OneDrive\\Desktop\\EventManagerApi\\MyApi.Domain\\MyApi.Domain.csproj"
             }
           }
         }
@@ -386,7 +401,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.300"
+      "SdkAnalysisLevel": "10.0.400"
     },
     "frameworks": {
       "net10.0": {
@@ -425,7 +440,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.303/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.AspNetCore": "(,10.0.32767]",
           "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",
