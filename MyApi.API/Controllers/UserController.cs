@@ -26,7 +26,10 @@ namespace MyApi.API.Controllers
 
         [AllowAnonymous]
         [HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] User request)
+        public async Task<IActionResult> Register([FromBody] NewUserRequest request)
+
+        // registration logic
+
         {
             var response = await _userService.CreateUserAsync(request);
             return Ok(response);

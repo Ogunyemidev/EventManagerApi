@@ -1,7 +1,11 @@
 using Microsoft.EntityFrameworkCore;
 using MyApi.Infrastructure.Persistence;
 
-var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(new WebApplicationOptions
+{
+    Args = args,
+    EnvironmentName = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT")
+});
 
 // Database
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -20,10 +24,10 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build();
 
 // OpenAPI document
-    app.MapOpenApi();
+app.MapOpenApi();
 
-    app.UseSwagger();
-    app.UseSwaggerUI();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 
 app.UseHttpsRedirection();
