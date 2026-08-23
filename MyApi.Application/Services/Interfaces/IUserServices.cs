@@ -1,24 +1,32 @@
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System;
 using System.Collections.Generic;
+using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using MyApi.Application.Dtos.RequestDtos;
+using MyApi.Application.Dtos.ResponseDtos;
 using MyApi.Domain.Entities;
-
 
 namespace MyApi.Application.Services.Interfaces
 {
     public interface IUserServices
     {
-        Task<User?> GetUserByEmailAsync(string email);
-        Task<User?> GetUserByIdAsync(Guid id);
-        Task<List<User>> GetAllUsersAsync();
-        Task<bool> CreateUserAsync(User user);
-        Task<bool> UpdateUserAsync(User user);
-        Task<bool> DeleteUserAsync(Guid id);
-        Task<bool> UpdateWalletBalanceAsync(Guid id, decimal amount);
-        Task<bool> EmailExistsAsync(string email);
-        Task<bool> SearchUserRequest();
+        Task<LoginResponse> CreateUserAsync(NewUserRequest request);
+
+        Task<LoginResponse> LoginAsync(LoginRequest request);
+
+        Task<List<UserDto>> GetAllUsers(SearchUserRequest request);
+
+        Task<UserDto> GetProfile(Guid id);
+
+        Task<UserDto> GetUserByEmail(string email);
+
+        Task<bool> UpdateProfile(
+            Guid id,
+            UpdateUserRequest request);
+
+        Task<string> UploadProfilePicture(
+            IFormFile file,
+            CancellationToken cancellationToken);
     }
 }

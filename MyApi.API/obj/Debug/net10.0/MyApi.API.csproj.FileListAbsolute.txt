@@ -189,15 +189,24 @@ C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\obj\Debug
 C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.pdb
 C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.genruntimeconfig.cache
 C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\obj\Debug\net10.0\ref\MyApi.API.dll
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.csproj.AssemblyReference.cache
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\rpswa.dswa.cache.json
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.AssemblyInfoInputs.cache
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.AssemblyInfo.cs
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.csproj.CoreCompileInputs.cache
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.sourcelink.json
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\AWSSDK.Core.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\AWSSDK.S3.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Core.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Storage.Blobs.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Storage.Common.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.ClientModel.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.IO.Hashing.dll
+C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.Memory.Data.dll
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\bin\Debug\net10.0\BuildHost-net472\Microsoft.Build.Locator.dll
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\bin\Debug\net10.0\BuildHost-net472\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\bin\Debug\net10.0\BuildHost-net472\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe.config
@@ -383,6 +392,15 @@ C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\bin\Debug\net10.0\MyAp
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\bin\Debug\net10.0\MyApi.Application.pdb
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\bin\Debug\net10.0\MyApi.Infrastructure.pdb
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\bin\Debug\net10.0\MyApi.Domain.pdb
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.csproj.AssemblyReference.cache
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.AssemblyInfoInputs.cache
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.AssemblyInfo.cs
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.csproj.CoreCompileInputs.cache
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.sourcelink.json
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -398,21 +416,3 @@ C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\refi
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.pdb
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\MyApi.API.genruntimeconfig.cache
 C:\Users\somac\OneDrive\Desktop\EventManagerApi\MyApi.API\obj\Debug\net10.0\ref\MyApi.API.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\AWSSDK.Core.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\AWSSDK.S3.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Core.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Storage.Blobs.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Azure.Storage.Common.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.ClientModel.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.IO.Hashing.dll
-C:\Users\SURFACE PRO\Desktop\EventManagement\EventManagerApi\MyApi.API\bin\Debug\net10.0\System.Memory.Data.dll

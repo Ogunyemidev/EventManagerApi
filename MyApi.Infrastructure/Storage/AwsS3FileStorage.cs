@@ -7,6 +7,7 @@ using Amazon.S3.Model;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using MyApi.Application;
+using MyApi.Application.Storage;
 
 namespace MyApi.Infrastructure.Storage
 {

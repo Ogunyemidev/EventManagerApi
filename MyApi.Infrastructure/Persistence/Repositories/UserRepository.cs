@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MyApi.Application;
+using MyApi.Application.IRepositories;
 using MyApi.Application.Dtos.RequestDtos;
 using MyApi.Domain.Entities;
+using MyApi.Application.Services.Interfaces;
 
 namespace MyApi.Infrastructure.Persistence.Repositories
 {

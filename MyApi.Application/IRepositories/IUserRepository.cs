@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using MyApi.Application.Dtos.RequestDtos;
 using MyApi.Domain.Entities;
 
-namespace MyApi.Application
+namespace MyApi.Application.IRepositories
 {
     public interface IUserRepository
     {

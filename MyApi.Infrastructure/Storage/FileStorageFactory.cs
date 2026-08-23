@@ -2,6 +2,8 @@ using System;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MyApi.Application;
+using MyApi.Application.Storage;
+
 
 namespace MyApi.Infrastructure.Storage
 {

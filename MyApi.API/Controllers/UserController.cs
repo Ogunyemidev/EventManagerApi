@@ -1,14 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 using MyApi.Application.Dtos.RequestDtos;
 using MyApi.Application.Services.Interfaces;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using MyApi.Domain.Entities;
-using MyApi.Application.Authentication;
+using MyApi.Application.Dtos.ResponseDtos;
 using MyApi.Application.Services.Implementations;
+using MyApi.Domain.Entities;
 
 namespace MyApi.API.Controllers
 {
@@ -27,21 +24,19 @@ namespace MyApi.API.Controllers
         [AllowAnonymous]
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] NewUserRequest request)
-
-        // registration logic
-
         {
             var response = await _userService.CreateUserAsync(request);
             return Ok(response);
         }
 
-        // [AllowAnonymous]
-        // [HttpPost("login")]
-        // public async Task<IActionResult> Login([FromBody] LoginRequest request)
-        // {
-        //     var response = await _userService.Login(request);
-        //     return Ok(response);
-        // }
+        [AllowAnonymous]
+        [HttpPost("login")]
+        public async Task<IActionResult> Login(
+            [FromBody] LoginRequest request)
+        {
+            var response = await _userService.LoginAsync(request);
+            return Ok(response);
+        }
 
         // [Authorize(Policy = "AdminOnly")]
         // [HttpPost("add-user")]
@@ -59,9 +54,14 @@ namespace MyApi.API.Controllers
         // }
 
         // [HttpPost("upload-profile-picture")]
-        // public async Task<IActionResult> UploadProfilePicture(IFormFile file, CancellationToken cancellationToken)
+        // public async Task<IActionResult> UploadProfilePicture(
+        //     IFormFile file,
+        //     CancellationToken cancellationToken)
         // {
-        //     var path = await _userService.UploadProfilePicture(file, cancellationToken);
+        //     var path = await _userService.UploadProfilePicture(
+        //         file,
+        //         cancellationToken);
+
         //     return Ok(path);
         // }
     }

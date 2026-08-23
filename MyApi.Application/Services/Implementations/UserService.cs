@@ -7,13 +7,19 @@ using Microsoft.Extensions.Logging;
 using MyApi.Application.Authentication;
 using MyApi.Application.Dtos.RequestDtos;
 using MyApi.Application.Dtos.ResponseDtos;
+using MyApi.Application.Services.Interfaces;
+using MyApi.Application.IRepositories;
+using MyApi.Application.Storage;
+using MyApi.Application.Exceptions;
+
+
 using MyApi.Domain;
 using MyApi.Domain.Entities;
 using MyApi.Domain.Enums;
 
 namespace MyApi.Application.Services.Implementations
 {
-    public class UserService
+    public class UserService : IUserServices
     {
         private readonly IUserRepository _userRepository;
         private readonly ILogger<UserService> _logger;
@@ -85,7 +91,7 @@ namespace MyApi.Application.Services.Implementations
             };
         }
 
-        public async Task<LoginResponse> Login(LoginRequest request)
+        public async Task<LoginResponse> LoginAsync(LoginRequest request)
         {
             _logger.LogInformation("Attempting to log in user with email: {Email}", request.Email);
 
@@ -108,42 +114,52 @@ namespace MyApi.Application.Services.Implementations
             };
         }
 
-        public async Task<LoginResponse> Register(RegisterRequest request)
-        {
-            _logger.LogInformation("Registering user with email: {Email}", request.Email);
+    public async Task<LoginResponse> CreateUserAsync(NewUserRequest request)
+{
+    _logger.LogInformation(
+        "Registering user with email: {Email}",
+        request.Email);
 
-            var alreadyExists = await _userRepository.EmailExists(request.Email);
-            if (alreadyExists)
-            {
-                _logger.LogWarning("User with email {Email} already exists.", request.Email);
-                throw new BadRequestException($"User with email: {request.Email} already exists.");
-            }
+    var alreadyExists = await _userRepository.EmailExists(request.Email);
 
-            var newUser = new User
-            {
-                Id = Guid.NewGuid(),
-                FirstName = request.FirstName,
-                LastName = request.LastName,
-                Email = request.Email,
-                HashedPassword = Util.EncryptPassword(request.Password),
-                Role = Role.Customer,
-                CreatedBy = request.Email
-            };
+    if (alreadyExists)
+    {
+        _logger.LogWarning(
+            "User with email {Email} already exists.",
+            request.Email);
 
-            await _userRepository.AddUser(newUser);
-            _logger.LogInformation("User registered successfully with email: {Email}", request.Email);
+        throw new BadRequestException(
+            $"User with email: {request.Email} already exists.");
+    }
 
-            var token = _jwtService.GenerateToken(newUser);
+    var newUser = new User
+    {
+        Id = Guid.NewGuid(),
+        FirstName = request.FirstName,
+        LastName = request.LastName,
+        Email = request.Email,
+        HashedPassword = Util.EncryptPassword(request.Password),
+        Role = Role.Customer,
+        CreatedBy = request.Email
+    };
 
-            return new LoginResponse
-            {
-                Token = token,
-                Id = newUser.Id,
-                Email = newUser.Email,
-                FullName = $"{newUser.FirstName} {newUser.LastName}",
-                Role = newUser.Role.ToString()
-            };
-        }
+    await _userRepository.AddUser(newUser);
+
+    _logger.LogInformation(
+        "User registered successfully with email: {Email}",
+        request.Email);
+
+    var token = _jwtService.GenerateToken(newUser);
+
+    return new LoginResponse
+    {
+        Token = token,
+        Id = newUser.Id,
+        Email = newUser.Email,
+        FullName = $"{newUser.FirstName} {newUser.LastName}",
+        Role = newUser.Role.ToString()
+    };
+}
 
         public async Task<bool> UpdateProfile(Guid id, UpdateUserRequest request)
         {
