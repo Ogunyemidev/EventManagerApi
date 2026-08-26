@@ -2,7 +2,8 @@ namespace MyApi.Domain.Enums
 {
     public enum PaymentStatus
     {
-        Successful = 1,
-        Failed = 2,
+        Pending = 1,
+        Succeeded = 2,
+        Failed = 3
     }
 }

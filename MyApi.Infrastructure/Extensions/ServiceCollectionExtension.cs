@@ -37,6 +37,8 @@ namespace MyApi.Infrastructure.Extensions
             services.AddScoped<AzureBlobFileStorage>();
             services.AddScoped<FileStorageFactory>();
             services.AddScoped<LocalFileStorage>();
+            services.AddScoped<IEventService, EventService>();
+            services.AddScoped<IEventRepository, EventRepository>();
 
             services.AddScoped<IFileStorage>(sp =>
                 sp.GetRequiredService<FileStorageFactory>().Create());

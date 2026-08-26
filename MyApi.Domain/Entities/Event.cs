@@ -1,17 +1,13 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using MyApi.Domain.Entities;
+
 using MyApi.Domain.Enums;
 
 namespace MyApi.Domain.Entities
 {
-    public class Event: BaseEntity
+    public class Event : BaseEntity
     {
-        public Guid? EventId { get; set; }
+        public Guid OrganizerId { get; set; }
 
-        public Guid? OrganizerId { get; set; }
+        public User Organizer { get; set; } = default!;
 
         public required string EventName { get; set; }
 
@@ -23,5 +19,7 @@ namespace MyApi.Domain.Entities
 
         public EventStatus EventStatus { get; set; }
 
+        public ICollection<TicketType> TicketTypes { get; set; }
+            = new List<TicketType>();
     }
 }

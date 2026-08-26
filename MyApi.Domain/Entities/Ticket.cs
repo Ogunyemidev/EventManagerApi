@@ -7,7 +7,7 @@ namespace MyApi.Domain.Entities
 {
     public class Ticket : BaseEntity
     {
-        public Guid TicketId { get; set; } = default!;
+        
 
         public required Guid BookingId { get; set; }
 

@@ -1,25 +1,23 @@
+using MyApi.Domain.Entities;
 using MyApi.Domain.Enums;
-
-
-namespace MyApi.Domain.Entities
+public class Booking : BaseEntity
 {
-    public class Booking
-    {
-        public Guid? BookingId { get; set; }
+    public Guid CustomerId { get; set; }
 
-        public required Guid CustomerId { get; set; }
+    public Guid EventId { get; set; }
 
-        public required Guid EventId { get; set; }
+    public BookingStatus BookingStatus { get; set; }
 
-        public required Event Event { get; set; }
+    public DateTime ReservedAt { get; set; }
 
-        public required User User { get; set; }
+    public DateTime ExpiredAt { get; set; }
 
-        public BookingStatus BookingStatus { get; set; }
+    public decimal TotalAmount { get; set; }
 
-        public DateTime ReservedAt { get; set; } = DateTime.UtcNow;
+    public User User { get; set; } = default!;
 
+    public Event Event { get; set; } = default!;
 
-        public decimal TotalAmount { get; set; } = default!;
-    }
+    public ICollection<Payment> Payments { get; set; }
+        = new List<Payment>();
 }

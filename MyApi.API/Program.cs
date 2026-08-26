@@ -12,8 +12,10 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 builder.Services.AddDatabase(builder.Configuration);
 builder.Services.AddDependencyInjection(builder.Configuration);
 
+
 // Controllers
 builder.Services.AddControllers();
+
 
 // OpenAPI
 builder.Services.AddOpenApi();

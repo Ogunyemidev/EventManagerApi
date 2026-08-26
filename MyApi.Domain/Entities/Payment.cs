@@ -1,24 +1,20 @@
-
-using MyApi.Domain.Entities;
 using MyApi.Domain.Enums;
-
 
 namespace MyApi.Domain.Entities
 {
     public class Payment : BaseEntity
     {
-        public Guid? PaymentId { get; set; }
+        public Guid BookingId { get; set; }
 
-        public Guid? BookingId { get; set; }
+        public Booking Booking { get; set; } = default!;
 
-        public decimal Amount { get; set; } = default!;
+        public decimal Amount { get; set; }
 
-        public PaymentStatus PaymentStatus { get; set; } = default!;
+        public PaymentStatus PaymentStatus { get; set; }
 
-        public PaymentMethod PaymentMethod { get; set; } = default!;
+        public PaymentMethod PaymentMethod { get; set; }
 
-        public string TransactionId { get; set; } = default!;
-
-        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public string TransactionId { get; set; }
+            = string.Empty;
     }
 }
