@@ -28,6 +28,13 @@ namespace MyApi.Infrastructure.Extensions
             services.AddScoped<IJwtService, JwtService>();
             services.AddScoped<ICurrentUser, CurrentUser>();
 
+            // Booking services
+            services.AddScoped<IBookingService, BookingServices>();
+            services.AddScoped<IBookingRepository, BookingRepository>();
+            services.AddScoped<IPaymentServices, PaymentServices>();
+            services.AddScoped<IPaymentRepository, PaymentRepository>();
+
+
             // JWT settings
             services.Configure<JwtSettings>(
                 configuration.GetSection("JwtSettings"));

@@ -2,12 +2,41 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MyApi.Application.Dtos.RequestDtos;
+using MyApi.Application.Dtos.ResponseDtos;
 using MyApi.Domain.Entities;
 
 namespace MyApi.Application.Services.Interfaces
 {
     public interface IBookingService
     {
+        Task<Booking> ReserveTicketsAsync(
+            CreateBookingRequest request,
+            CancellationToken cancellationToken);
+
+        Task<IEnumerable<Booking>> GetMyBookingsAsync(
+            CancellationToken cancellationToken);
+
+        Task<IEnumerable<Booking>> GetEventBookingsAsync(
+            Guid eventId,
+            CancellationToken cancellationToken);
+
+        Task<PaymentResponseDto> ProcessPaymentAsync(
+            Guid bookingId,
+            PaymentRequest request,
+            CancellationToken cancellationToken);
+
+        Task<bool> CancelBookingAsync(
+            Guid bookingId,
+            CancellationToken cancellationToken);
+
+        Task<IEnumerable<TicketDto>> GetBookingTicketsAsync(
+            Guid bookingId,
+            CancellationToken cancellationToken);
+
+        Task<BookingStatusDto> GetBookingStatusAsync(
+            Guid bookingId);
+
         Task<Booking?> GetBookingByIdAsync(
             Guid bookingId);
 
