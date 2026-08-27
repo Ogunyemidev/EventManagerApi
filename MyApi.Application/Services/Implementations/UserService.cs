@@ -139,7 +139,7 @@ namespace MyApi.Application.Services.Implementations
         LastName = request.LastName,
         Email = request.Email,
         HashedPassword = Util.EncryptPassword(request.Password),
-        Role = Role.Customer,
+        Role = request.Role,
         CreatedBy = request.Email
     };
 
