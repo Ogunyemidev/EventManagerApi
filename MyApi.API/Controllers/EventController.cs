@@ -88,8 +88,9 @@ namespace MyApi.API.Controllers
         // Organizer ID comes from JWT.
         // =========================================================
 
-        [HttpPost]
+
         [Authorize]
+        [HttpPost]
         public async Task<IActionResult> CreateEvent(
             [FromBody] CreateEventRequest request)
         {

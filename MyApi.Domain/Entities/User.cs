@@ -18,7 +18,7 @@ namespace MyApi.Domain.Entities
         public string HashedPassword { get; set; } = default!;
 
 
-        public Role Role { get; set; } = default!;
+        public Role Role { get; set; }
 
 
 

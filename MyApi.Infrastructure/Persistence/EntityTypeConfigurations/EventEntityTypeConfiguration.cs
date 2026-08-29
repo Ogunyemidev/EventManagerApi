@@ -66,9 +66,9 @@ namespace MyApi.Infrastructure.Persistence.EntityTypeConfigurations
 
             // Event Status
             builder.Property(e => e.EventStatus)
-                .IsRequired()
-                .HasConversion<string>()
-                .HasMaxLength(50);
+                .IsRequired();
+            // .HasConversion<string>()
+            // .HasMaxLength(50);
 
             // Event -> TicketTypes
             builder.HasMany(e => e.TicketTypes)

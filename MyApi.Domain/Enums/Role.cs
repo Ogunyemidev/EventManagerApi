@@ -4,7 +4,6 @@ namespace MyApi.Domain.Enums
     {
         Customer = 1,
         Staff = 2,
-
         Organizer = 3
 
     }

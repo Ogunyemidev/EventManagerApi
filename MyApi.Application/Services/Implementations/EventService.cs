@@ -129,7 +129,11 @@ namespace MyApi.Application.Services.Implementations
 
                 EventDate = request.EventDate,
 
-                EventStatus = EventStatus.Draft
+                EventStatus = EventStatus.Draft,
+
+                CreatedDate = DateTime.UtcNow,
+
+                CreatedBy = organizerId.ToString()
             };
 
             await _eventRepository.AddAsync(newEvent);
