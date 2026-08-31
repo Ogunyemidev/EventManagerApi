@@ -58,10 +58,22 @@ builder.Services
         };
     });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+});
+
 // Authorization
 builder.Services.AddAuthorization();
 
 var app = builder.Build();
+
 
 app.MapOpenApi();
 
@@ -69,6 +81,9 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowAll");
+
 
 // Global exception handling
 app.UseExceptionHandling();
