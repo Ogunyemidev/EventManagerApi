@@ -10,6 +10,7 @@ using MyApi.Infrastructure.Persistence.Repositories;
 using MyApi.Application.Storage;
 using MyApi.Infrastructure.Storage;
 
+
 namespace MyApi.Infrastructure.Extensions
 {
     public static class ServiceCollectionExtension
@@ -46,6 +47,10 @@ namespace MyApi.Infrastructure.Extensions
             services.AddScoped<LocalFileStorage>();
             services.AddScoped<IEventService, EventService>();
             services.AddScoped<IEventRepository, EventRepository>();
+
+            //Ticket type
+            services.AddScoped<ITicketTypeServices, TicketTypeServices>();
+            services.AddScoped<ITicketTypeRepository, TicketTypeRepository>();
 
             services.AddScoped<IFileStorage>(sp =>
                 sp.GetRequiredService<FileStorageFactory>().Create());

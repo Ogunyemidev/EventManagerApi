@@ -18,6 +18,9 @@ public class AppDbContext : DbContext
     public DbSet<Payment> Payments => Set<Payment>();
     public DbSet<Ticket> Tickets => Set<Ticket>();
 
+    public DbSet<TicketType> TicketTypes => Set<TicketType>();
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         base.OnModelCreating(modelBuilder);
