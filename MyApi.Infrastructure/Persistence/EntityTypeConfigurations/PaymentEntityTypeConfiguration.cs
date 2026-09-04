@@ -1,43 +1,40 @@
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MyApi.Domain.Entities;
 
-namespace MyApi.Infrastructure.Persistence.EntityTypeConfigurations
+namespace MyApi.Infrastructure.Persistence.Configurations;
+
+public class PaymentEntityTypeConfiguration : IEntityTypeConfiguration<Payment>
 {
-    public class PaymentEntityTypeConfiguration
-        : IEntityTypeConfiguration<Payment>
+    public void Configure(EntityTypeBuilder<Payment> builder)
     {
-        public void Configure(EntityTypeBuilder<Payment> builder)
-        {
-            builder.ToTable("Payments");
+        builder.ToTable("Payments");
 
-            builder.HasKey(p => p.Id);
+        builder.HasKey(x => x.Id);
 
-            builder.Property(p => p.Amount)
-                .IsRequired()
-                .HasPrecision(18, 2);
+        builder.Property(x => x.BookingId)
+            .IsRequired();
 
-            builder.Property(p => p.PaymentStatus)
-                .HasConversion<string>()
-                .IsRequired();
+        builder.Property(x => x.Amount)
+            .HasPrecision(18, 2)
+            .IsRequired();
 
-            builder.Property(p => p.PaymentMethod)
-                .HasConversion<string>()
-                .IsRequired();
+        // Stored as integer because PaymentStatus is an enum
+        builder.Property(x => x.PaymentStatus)
+            .IsRequired();
 
-            builder.Property(p => p.TransactionId)
-                .IsRequired()
-                .HasMaxLength(100);
+        // Stored as integer because PaymentMethod is an enum
+        builder.Property(x => x.PaymentMethod)
+            .IsRequired();
 
-            builder.HasIndex(p => p.TransactionId)
-                .IsUnique();
+        builder.Property(x => x.TransactionId)
+            .IsRequired()
+            .HasMaxLength(100);
 
-            builder.HasIndex(p => p.BookingId);
-
-            builder.HasOne(p => p.Booking)
-                .WithMany(b => b.Payments)
-                .HasForeignKey(p => p.BookingId)
-                .OnDelete(DeleteBehavior.Restrict);
-        }
+        builder.HasOne(x => x.Booking)
+            .WithMany(x => x.Payments)
+            .HasForeignKey(x => x.BookingId)
+            .OnDelete(DeleteBehavior.Cascade);
     }
 }
