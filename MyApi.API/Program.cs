@@ -3,6 +3,8 @@ using Microsoft.IdentityModel.Tokens;
 using MyApi.API.MiddleWare;
 using MyApi.Infrastructure.Extensions;
 using System.Text;
+using MyApi.Application.Services.Interfaces;
+using MyApi.Infrastructure.Payments;
 
 
 var builder = WebApplication.CreateBuilder(new WebApplicationOptions
@@ -68,6 +70,11 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
     });
 });
+
+builder.Services.Configure<PayPalOptions>(
+    builder.Configuration.GetSection("PayPal"));
+
+builder.Services.AddHttpClient<IPaymentGateway, PaypalPaymentGateway>();
 
 // Authorization
 builder.Services.AddAuthorization();

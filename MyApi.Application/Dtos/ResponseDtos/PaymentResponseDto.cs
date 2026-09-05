@@ -1,4 +1,3 @@
-using System;
 using MyApi.Domain.Enums;
 
 namespace MyApi.Application.Dtos.ResponseDtos
@@ -16,5 +15,9 @@ namespace MyApi.Application.Dtos.ResponseDtos
         public PaymentMethod PaymentMethod { get; set; }
 
         public string TransactionId { get; set; } = string.Empty;
+
+        public string PaymentUrl { get; set; } = string.Empty;
+
+        public string GatewayTransactionId { get; set; } = string.Empty;
     }
 }

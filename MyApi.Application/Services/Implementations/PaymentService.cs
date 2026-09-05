@@ -11,13 +11,16 @@ namespace MyApi.Application.Services.Implementations
     {
         private readonly IPaymentRepository _paymentRepository;
         private readonly IBookingRepository _bookingRepository;
+        private readonly IPaymentGateway _paymentGateway;
 
         public PaymentServices(
             IPaymentRepository paymentRepository,
-            IBookingRepository bookingRepository)
+            IBookingRepository bookingRepository,
+            IPaymentGateway paymentGateway)
         {
             _paymentRepository = paymentRepository;
             _bookingRepository = bookingRepository;
+            _paymentGateway = paymentGateway;
         }
 
         public async Task<PaymentResponseDto> ProcessPaymentAsync(
@@ -30,11 +33,8 @@ namespace MyApi.Application.Services.Implementations
             if (request.BookingId == Guid.Empty)
                 throw new ArgumentException("Booking ID is required.");
 
-            if (request.Amount <= 0)
-                throw new ArgumentException(
-                    "Payment amount must be greater than zero.");
-
-            // Check that booking exists
+          
+            // 1. Get booking
             var booking = await _bookingRepository
                 .GetByIdAsync(request.BookingId);
 
@@ -42,7 +42,12 @@ namespace MyApi.Application.Services.Implementations
                 throw new KeyNotFoundException(
                     "Booking not found.");
 
-            // Check whether this booking already has a successful payment
+            // 2. Check that the booking belongs to the logged-in user
+            if (booking.CustomerId != userId)
+                throw new UnauthorizedAccessException(
+                    "You are not authorized to pay for this booking.");
+
+            // 3. Check whether booking already has successful payment
             var existingPayments = await _paymentRepository
                 .GetByBookingIdAsync(request.BookingId);
 
@@ -55,24 +60,56 @@ namespace MyApi.Application.Services.Implementations
                 return MapToResponseDto(successfulPayment);
             }
 
-            // Generate transaction ID
+            // 4. Generate internal transaction ID
             var transactionId =
                 $"PAY-{Guid.NewGuid():N}".ToUpperInvariant();
 
+            // 5. Create pending payment
             var payment = new Payment
             {
                 BookingId = request.BookingId,
-                Amount = request.Amount,
+
+                // Ideally use booking.TotalAmount instead of trusting
+                // the amount sent by the frontend.
+                Amount = booking.TotalAmount,
+
                 PaymentStatus = PaymentStatus.Pending,
+
                 PaymentMethod = request.PaymentMethod,
+
                 TransactionId = transactionId
             };
 
+            // 6. Save payment first
             await _paymentRepository.AddAsync(payment);
-
             await _paymentRepository.SaveChangesAsync();
 
-            return MapToResponseDto(payment);
+            // 7. Initialize payment with PayPal
+            var gatewayResponse =
+                await _paymentGateway.InitializePaymentAsync(
+                    payment.Amount,
+                    "NGN",
+                    payment.TransactionId);
+
+            // 8. Check whether PayPal initialization succeeded
+            if (!gatewayResponse.Success)
+            {
+                payment.PaymentStatus = PaymentStatus.Failed;
+
+                await _paymentRepository.SaveChangesAsync();
+
+                throw new InvalidOperationException(
+                    gatewayResponse.Message);
+            }
+
+            // 9. Return payment information + PayPal URL
+            var response = MapToResponseDto(payment);
+
+            response.PaymentUrl = gatewayResponse.PaymentUrl;
+            response.GatewayTransactionId =
+                gatewayResponse.TransactionId;
+
+            return response;
         }
 
         public async Task<PaymentDto> GetPaymentByIdAsync(
@@ -148,7 +185,7 @@ namespace MyApi.Application.Services.Implementations
         }
 
         private static PaymentResponseDto MapToResponseDto(
-    Payment payment)
+            Payment payment)
         {
             return new PaymentResponseDto
             {

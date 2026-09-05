@@ -1,13 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using MyApi.Application.Dtos.ResponseDtos;
 
-namespace MyApi.Application.Services.Interfaces
+namespace MyApi.Application.Services.Interfaces;
+
+public interface IPaymentGateway
 {
-    public interface IPaymentGateway
-    {
-        
     Task<PaymentGatewayResponse> InitializePaymentAsync(
         decimal amount,
         string currency,
@@ -15,6 +11,4 @@ namespace MyApi.Application.Services.Interfaces
 
     Task<PaymentGatewayResponse> VerifyPaymentAsync(
         string gatewayTransactionId);
-
-    }
 }
