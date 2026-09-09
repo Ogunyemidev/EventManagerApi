@@ -1,4 +1,3 @@
-
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using MyApi.Domain.Entities;
@@ -67,8 +66,16 @@ namespace MyApi.Infrastructure.Persistence.EntityTypeConfigurations
             // Event Status
             builder.Property(e => e.EventStatus)
                 .IsRequired();
-            // .HasConversion<string>()
-            // .HasMaxLength(50);
+
+            // Price
+            builder.Property(e => e.Price)
+                .IsRequired()
+                .HasPrecision(18, 2);
+
+            // Image - Base64
+            builder.Property(e => e.Image)
+                .IsRequired(false)
+                .HasColumnType("text");
 
             // Event -> TicketTypes
             builder.HasMany(e => e.TicketTypes)

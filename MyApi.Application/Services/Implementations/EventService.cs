@@ -133,7 +133,11 @@ namespace MyApi.Application.Services.Implementations
 
                 CreatedDate = DateTime.UtcNow,
 
-                CreatedBy = organizerId.ToString()
+                CreatedBy = organizerId.ToString(),
+
+                Price = request.Price,
+                
+                Image = request.Image
             };
 
             await _eventRepository.AddAsync(newEvent);

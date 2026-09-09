@@ -1,4 +1,3 @@
-
 using MyApi.Domain.Enums;
 
 namespace MyApi.Domain.Entities
@@ -18,6 +17,10 @@ namespace MyApi.Domain.Entities
         public DateTime EventDate { get; set; }
 
         public EventStatus EventStatus { get; set; }
+
+        public decimal Price { get; set; }
+
+        public string? Image { get; set; }
 
         public ICollection<TicketType> TicketTypes { get; set; }
             = new List<TicketType>();
