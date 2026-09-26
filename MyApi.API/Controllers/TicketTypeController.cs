@@ -11,10 +11,10 @@ namespace MyApi.API.Controllers
     [Authorize]
     public class TicketTypeController : ControllerBase
     {
-        private readonly ITicketTypeServices _ticketTypeServices;
+        private readonly ITicketTypeService _ticketTypeServices;
 
         public TicketTypeController(
-            ITicketTypeServices ticketTypeServices)
+            ITicketTypeService ticketTypeServices)
         {
             _ticketTypeServices = ticketTypeServices;
         }
