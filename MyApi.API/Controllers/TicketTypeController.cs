@@ -65,7 +65,7 @@ namespace MyApi.API.Controllers
         // ============================================================
         // GET ALL TICKET TYPES FOR AN EVENT
 
-        [HttpGet("all")]
+        [HttpGet("")]
         [AllowAnonymous]
 
         public async Task<IActionResult> GetAllTicketTypes()
