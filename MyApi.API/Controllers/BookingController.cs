@@ -21,7 +21,7 @@ namespace MyApi.API.Controllers
         /// Reserve tickets for an event.
         /// </summary>
         [HttpPost("reserve")]
-        [Authorize(Roles = "Customer")]
+        [Authorize(Roles = "Organizer, Customer")]
         public async Task<IActionResult> ReserveTickets(
             [FromBody] CreateBookingRequest request,
             CancellationToken cancellationToken)
