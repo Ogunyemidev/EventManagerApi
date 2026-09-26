@@ -25,7 +25,7 @@ namespace MyApi.API.Controllers
         // POST: api/TicketType
         // ============================================================
         [HttpPost]
-        [Authorize(Roles = "Organizer,Admin,SuperAdmin")]
+        [Authorize(Roles = "Organizer,Staff")]
         public async Task<IActionResult> CreateTicketType(
             [FromBody] CreateTicketTypeRequest request)
         {
