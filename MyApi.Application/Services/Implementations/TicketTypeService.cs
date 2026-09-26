@@ -44,6 +44,8 @@ namespace MyApi.Application.Services.Implementations
 
                 EventId = request.EventId,
 
+                CreatedBy = organizerId.ToString(),
+
                 Name = request.TicketTypeName,
 
                 Description = request.Description,

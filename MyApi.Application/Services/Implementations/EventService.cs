@@ -278,7 +278,7 @@ namespace MyApi.Application.Services.Implementations
         private static EventDto MapToEventDto(Event eventEntity)
         {
             return new EventDto
-            {
+            {   
                 EventId = eventEntity.Id,
                 OrganizerId = eventEntity.OrganizerId,
                 EventName = eventEntity.EventName,
