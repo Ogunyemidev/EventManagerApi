@@ -7,7 +7,7 @@ using MyApi.Domain.Entities;
 
 namespace MyApi.Application.Services.Implementations
 {
-    public class TicketTypeServices : ITicketTypeServices
+    public class TicketTypeServices : ITicketTypeService
     {
         private readonly ITicketTypeRepository _ticketTypeRepository;
 

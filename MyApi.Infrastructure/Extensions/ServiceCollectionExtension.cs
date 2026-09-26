@@ -49,7 +49,7 @@ namespace MyApi.Infrastructure.Extensions
             services.AddScoped<IEventRepository, EventRepository>();
 
             //Ticket type
-            services.AddScoped<ITicketTypeServices, TicketTypeServices>();
+            services.AddScoped<ITicketTypeService, TicketTypeServices>();
             services.AddScoped<ITicketTypeRepository, TicketTypeRepository>();
 
             services.AddScoped<IFileStorage>(sp =>

@@ -7,7 +7,7 @@ using MyApi.Application.Dtos.ResponseDtos;
 
 namespace MyApi.Application.Services.Interfaces
 {
-    public interface ITicketTypeServices
+    public interface ITicketTypeService
     {
         // Create ticket type for an event
         Task<TicketTypeDto> CreateTicketTypeAsync(
