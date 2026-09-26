@@ -61,7 +61,16 @@ namespace MyApi.Application.Services.Implementations
             return MapToDto(createdTicketType);
         }
 
+        // GET ALL TICKET TYPES
+        public async Task<List<TicketTypeDto>> GetAllTicketTypesAsync()
+        {
+            var ticketTypes =
+                await _ticketTypeRepository.GetAllAsync();
 
+            return ticketTypes
+                .Select(MapToDto)
+                .ToList();
+        }
         // GET ALL TICKET TYPES FOR EVENT
         public async Task<List<TicketTypeDto>> GetTicketTypesByEventIdAsync(
             Guid eventId)

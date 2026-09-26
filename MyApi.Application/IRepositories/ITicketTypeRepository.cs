@@ -6,6 +6,11 @@ namespace MyApi.Application.IRepositories
     {
         Task<TicketType> CreateAsync(TicketType ticketType);
 
+        Task<List<TicketType>> GetAllAsync();
+
+
+        Task<List<TicketType>> GetAllTicketTypesAsync();
+
         Task<List<TicketType>> GetByEventIdAsync(Guid eventId);
 
         Task<TicketType?> GetByIdAsync(Guid ticketTypeId);

@@ -18,5 +18,12 @@ namespace MyApi.Application.Dtos.ResponseDtos
         public DateTime EventDate { get; set; }
 
         public EventStatus EventStatus { get; set; }
+
+        public decimal Price { get; set; }
+
+        public string? Image { get; set; }
+
+        public ICollection<TicketTypeDto> TicketTypes { get; set; }
+            = new List<TicketTypeDto>();
     }
 }

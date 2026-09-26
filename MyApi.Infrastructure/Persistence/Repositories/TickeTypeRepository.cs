@@ -22,6 +22,17 @@ namespace MyApi.Infrastructure.Persistence.Repositories
 
             return ticketType;
         }
+        public async Task<List<TicketType>> GetAllAsync()
+        {
+            return await _context.TicketTypes
+                .AsNoTracking()
+                .ToListAsync();
+        }
+
+        public async Task<List<TicketType>> GetAllTicketTypesAsync()
+        {
+            return await GetAllAsync();
+        }
 
         public async Task<List<TicketType>> GetByEventIdAsync(Guid eventId)
         {

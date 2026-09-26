@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using MyApi.Application.Dtos.RequestDtos;
@@ -12,6 +13,8 @@ namespace MyApi.Application.Services.Interfaces
         Task<TicketTypeDto> CreateTicketTypeAsync(
             CreateTicketTypeRequest request,
             Guid organizerId);
+
+        Task<List<TicketTypeDto>> GetAllTicketTypesAsync();
 
         // Get ticket types belonging to an event
         Task<List<TicketTypeDto>> GetTicketTypesByEventIdAsync(

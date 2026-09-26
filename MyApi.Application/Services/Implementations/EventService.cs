@@ -136,7 +136,7 @@ namespace MyApi.Application.Services.Implementations
                 CreatedBy = organizerId.ToString(),
 
                 Price = request.Price,
-                
+
                 Image = request.Image
             };
 
@@ -285,7 +285,9 @@ namespace MyApi.Application.Services.Implementations
                 EventDescription = eventEntity.EventDescription,
                 Eventvenue = eventEntity.Eventvenue,
                 EventDate = eventEntity.EventDate,
-                EventStatus = eventEntity.EventStatus
+                EventStatus = eventEntity.EventStatus,
+                Price = eventEntity.Price,
+                Image = eventEntity.Image
             };
         }
 
@@ -306,7 +308,9 @@ namespace MyApi.Application.Services.Implementations
                 EventDescription = eventEntity.EventDescription,
                 Eventvenue = eventEntity.Eventvenue,
                 EventDate = eventEntity.EventDate,
-                EventStatus = eventEntity.EventStatus
+                EventStatus = eventEntity.EventStatus,
+                Price = eventEntity.Price,
+                Image = eventEntity.Image,
             };
         }
     }
