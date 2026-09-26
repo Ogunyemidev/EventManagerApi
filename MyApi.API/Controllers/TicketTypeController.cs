@@ -64,6 +64,33 @@ namespace MyApi.API.Controllers
 
         // ============================================================
         // GET ALL TICKET TYPES FOR AN EVENT
+
+        [HttpGet("all")]
+        [AllowAnonymous]
+
+        public async Task<IActionResult> GetAllTicketTypes()
+        {
+            try
+            {
+                var result =
+                    await _ticketTypeServices.GetAllTicketTypesAsync();
+
+                return Ok(new
+                {
+                    statusCode = 200,
+                    message = "All ticket types retrieved successfully.",
+                    data = result
+                });
+            }
+            catch (ArgumentException ex)
+            {
+                return BadRequest(new
+                {
+                    statusCode = 400,
+                    message = ex.Message
+                });
+            }
+        }
         // GET: api/TicketType/event/{eventId}
         // ============================================================
         [HttpGet("event/{eventId:guid}")]
