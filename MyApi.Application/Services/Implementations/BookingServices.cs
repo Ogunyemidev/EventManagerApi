@@ -116,6 +116,7 @@ namespace MyApi.Application.Services.Implementations
 
             return new BookingStatusDto
             {
+                CreatedBy = userId.ToString(),
                 BookingId = booking.Id,
                 Status = isExpired ? BookingStatus.Expired.ToString() : booking.BookingStatus.ToString(),
                 ExpiresAt = booking.ExpiredAt,
