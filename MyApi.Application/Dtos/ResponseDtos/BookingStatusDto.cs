@@ -4,6 +4,7 @@ namespace MyApi.Application.Dtos.ResponseDtos
 {
     public class BookingStatusDto
     {
+        public Guid? CreatedBy { get; set; }
         public Guid BookingId { get; set; }
 
         public string Status { get; set; } = string.Empty;

@@ -25,15 +25,18 @@ namespace MyApi.Application.Services.Implementations
         }
 
         public async Task<Booking> ReserveTicketsAsync(
-            CreateBookingRequest request,
-            CancellationToken cancellationToken)
+     CreateBookingRequest request,
+     CancellationToken cancellationToken)
         {
             if (request == null)
                 throw new ArgumentNullException(nameof(request));
 
+            var userId = _currentUser.LoggedInUserId();
+
             var booking = new Booking
             {
-                CustomerId = _currentUser.LoggedInUserId(),
+                CustomerId = userId,
+                CreatedBy = userId.ToString(),
                 EventId = request.EventId,
                 BookingStatus = BookingStatus.Reserved,
                 ReservedAt = DateTime.UtcNow,
@@ -41,9 +44,9 @@ namespace MyApi.Application.Services.Implementations
             };
 
             await _bookingRepository.CreateBookingAsync(booking);
+
             return booking;
         }
-
         public async Task<IEnumerable<Booking>> GetMyBookingsAsync(
             CancellationToken cancellationToken)
         {
@@ -116,7 +119,7 @@ namespace MyApi.Application.Services.Implementations
 
             return new BookingStatusDto
             {
-                CreatedBy = userId.ToString(),
+
                 BookingId = booking.Id,
                 Status = isExpired ? BookingStatus.Expired.ToString() : booking.BookingStatus.ToString(),
                 ExpiresAt = booking.ExpiredAt,
@@ -172,17 +175,19 @@ namespace MyApi.Application.Services.Implementations
         }
 
 
-        public async Task<bool> CreateBookingAsync(
-            Booking booking)
+        public async Task<bool> CreateBookingAsync(Booking booking)
         {
             if (booking == null)
-                throw new ArgumentNullException(
-                    nameof(booking));
+                throw new ArgumentNullException(nameof(booking));
 
-            return await _bookingRepository
-                .CreateBookingAsync(booking);
+            if (string.IsNullOrWhiteSpace(booking.CreatedBy))
+            {
+                booking.CreatedBy =
+                    _currentUser.LoggedInUserId().ToString();
+            }
+
+            return await _bookingRepository.CreateBookingAsync(booking);
         }
-
 
         public async Task<bool> UpdateBookingAsync(
             Booking booking)
